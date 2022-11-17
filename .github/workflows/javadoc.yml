@@ -13,5 +13,5 @@ jobs:
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          java-version: 11
+          java-version: 17
           target-folder: doc
