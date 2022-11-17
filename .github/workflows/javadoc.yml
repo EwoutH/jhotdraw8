@@ -14,4 +14,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           java-version: 17
-          target-folder: doc
+          target-folder: javadoc
