@@ -1,4 +1,4 @@
-name: Deploy Javadoc
+name: Publish Javadoc
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
     #  - main
 
 jobs:
-  publish:
+  publish-javadoc:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy JavaDoc
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          java-version: 8
+          java-version: 11
           target-folder: doc
